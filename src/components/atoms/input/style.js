@@ -1,0 +1,131 @@
+import styled from 'styled-components';
+
+export const InputGroupWrapper = styled.span`
+isplay: inline-block !important;
+width: 100% !important;
+text-align: start !important;
+vertical-align: top !important;
+box-sizing: border-box !important;
+`;
+
+export const InputGroup = styled.span`
+webkit-box-sizing: border-box !important;
+box-sizing: border-box !important;
+margin: 0 !important;
+padding: 0 !important;
+color: rgba(0, 0, 0, 0.85) !important;
+font-size: 14px !important;
+font-variant: tabular-nums !important;
+line-height: 1.5715 !important;
+list-style: none !important;
+-webkit-font-feature-settings: 'tnum' !important;
+font-feature-settings: 'tnum' !important;
+position: relative !important;
+display: table !important;
+width: 100% !important;
+border-collapse: separate !important;
+border-spacing: 0 !important;
+text-align: start !important;
+box-sizing: border-box !important;
+`;
+
+export const SearchInput = styled.input`
+border-top-right-radius: 0 !important;
+border-bottom-right-radius: 0 !important;
+float: left !important;
+width: 100% !important;
+margin-bottom: 0 !important;
+text-align: inherit !important;
+display: table-cell !important;
+text-overflow: ellipsis !important;
+touch-action: manipulation !important;
+webkit-box-sizing: border-box !important;
+box-sizing: border-box !important;
+margin: 0 !important;
+padding: 0 !important;
+font-variant: tabular-nums !important;
+list-style: none !important;
+-webkit-font-feature-settings: 'tnum' !important;
+font-feature-settings: 'tnum' !important;
+position: relative !important;
+display: inline-block !important;
+width: 100% !important;
+min-width: 0 !important;
+padding: 4px 11px !important;
+color: rgba(0, 0, 0, 0.85) !important;
+font-size: 14px !important;
+line-height: 1.5715 !important;
+background-color: #fff !important;
+background-image: none !important;
+border: 1px solid #d9d9d9 !important;
+border-radius: 2px !important;
+-webkit-transition: all 0.3s !important;
+transition: all 0.3s !important;
+box-sizing: border-box !important;
+`;
+
+export const SearchBtnWrapper = styled.span`
+left: -1px !important;
+padding: 0 !important;
+border: 0 !important;
+border-top-left-radius: 0 !important;
+border-bottom-left-radius: 0 !important;
+position: relative !important;
+color: rgba(0, 0, 0, 0.85) !important;
+font-weight: normal !important;
+font-size: 14px !important;
+text-align: center !important;
+background-color: #fafafa !important;
+border-radius: 2px !important;
+-webkit-transition: all 0.3s !important;
+transition: all 0.3s !important;
+width: 1px !important;
+white-space: nowrap !important;
+vertical-align: middle !important;
+display: table-cell !important;
+box-sizing: border-box !important;
+font-variant: tabular-nums !important;
+line-height: 1.5715 !important;
+list-style: none !important;
+`;
+
+
+
+export const SearchBtn = styled.button`
+color: rgba(0, 0, 0, 0.45) !important;
+padding-top: 0 !important;
+padding-bottom: 0 !important;
+border-radius: 0 2px 2px 0 !important;
+width: 32px !important;
+height: 32px !important;
+padding: 2.4px 0 !important;
+font-size: 16px !important;
+border-radius: 2px !important;
+vertical-align: -1px !important;
+outline: 0 !important;
+line-height: 1.5715 !important;
+position: relative !important;
+display: inline-block !important;
+font-weight: 400 !important;
+white-space: nowrap !important;
+text-align: center !important;
+background-image: none !important;
+border: 1px solid transparent !important;
+-webkit-box-shadow: 0 2px 0 rgba(0, 0, 0, 0.015) !important;
+box-shadow: 0 2px 0 rgba(0, 0, 0, 0.015) !important;
+cursor: pointer !important;
+-webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) !important;
+transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) !important;
+-webkit-user-select: none !important;
+-moz-user-select: none !important;
+-ms-user-select: none !important;
+user-select: none !important;
+-ms-touch-action: manipulation !important;
+touch-action: manipulation !important;
+height: 32px !important;
+font-size: 14px !important;
+border-radius: 2px !important;
+background: #fff !important;
+border-color: #d9d9d9 !important;
+box-sizing: border-box !important;
+`;
