@@ -23,6 +23,7 @@ export const HiddenFilter = styled.div`
 position: absolute;
 top: 40px;
 width: 100%;
+z-index: 1;
 `;
 
 export const HiddenLayout = styled.div`
