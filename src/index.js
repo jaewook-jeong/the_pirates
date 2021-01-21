@@ -3,11 +3,25 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { Market, Store } from './pages';
+import { AppBody } from './App.style';
+
+
+const Pirates = () => (
+  <AppBody>
+    <Router>
+      <Switch>
+        <Route exact={true} path="/" component={App} />
+        <Route path="/시장" component={Market} />
+        <Route path="/:uri" component={Store} />
+      </Switch>
+    </Router>
+  </AppBody>
+);
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <Pirates />,
   document.getElementById('root')
 );
 
