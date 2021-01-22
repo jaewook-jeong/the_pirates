@@ -14,6 +14,7 @@ const Store = (props) => {
     // 마치 페이지 로딩 후 데이터를 가져오는 것처럼 보이게
     const data = storeData.filter((v) => v.uri === props.match.url)[0];
     setInfo(data);
+    window.scrollTo(0, 0);
   }, []);
   useEffect(() => {
     function onScroll() {
