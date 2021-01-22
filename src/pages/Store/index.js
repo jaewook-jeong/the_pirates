@@ -9,11 +9,16 @@ const Store = (props) => {
   const [info, setInfo] = useState({});
   const [sticky, setSticky] = useState(false);
   const [tabKey, setTabKey] = useState(0);
+  const [numObj, setNumObj] = useState({view: 0, comments: 0})
 
   useEffect(() => {
     // 마치 페이지 로딩 후 데이터를 가져오는 것처럼 보이게
     const data = storeData.filter((v) => v.uri === props.match.url)[0];
     setInfo(data);
+    setNumObj({
+      view: (Math.random() * 10).toFixed(1),
+      comments: Math.ceil(Math.random()*10000).toLocaleString(),
+    })
     window.scrollTo(0, 0);
   }, []);
   useEffect(() => {
@@ -39,7 +44,7 @@ const Store = (props) => {
             <span>뒤로가기</span>
           </a>
           <TitleSpan>{info.label} {info.market}</TitleSpan>
-          <ViewSpan>{(Math.random() * 10).toFixed(1)}만</ViewSpan>
+          <ViewSpan>{numObj.view}만</ViewSpan>
         </HeadLine>
       </FixedHeader>
       <StoreContainer>
@@ -105,7 +110,7 @@ const Store = (props) => {
                   <ul>
                     <TabButton status={tabKey === 0} onClick={()=> setTabKey(0)}><li>가격정보</li></TabButton>
                     <TabButton status={tabKey === 1} onClick={()=> setTabKey(1)}><li>탐방기</li></TabButton>
-                    <TabButton status={tabKey === 2} onClick={()=> setTabKey(2)}><li>리뷰 {Math.ceil(Math.random()*10000).toLocaleString()}</li></TabButton>
+                    <TabButton status={tabKey === 2} onClick={()=> setTabKey(2)}><li>리뷰 {numObj.comments}</li></TabButton>
                     <TabButton status={tabKey === 3} onClick={()=> setTabKey(3)}><li>위치</li></TabButton>
                   </ul>
                 </FixedTab>
